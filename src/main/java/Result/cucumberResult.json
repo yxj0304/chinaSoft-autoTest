@@ -1,1 +1,170 @@
-{}
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# Created by Chris-Acer at 2019/11/13"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5546318706,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.start()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "search \"selenium\" on google and click the first one",
+        "description": "",
+        "id": "validate-the-initial-deposit-amount;search-\"selenium\"-on-google-and-click-the-first-one",
+        "after": [
+          {
+            "result": {
+              "duration": 170403642,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8062845698,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "navigate to google home page",
+            "match": {
+              "location": "GoogleStep.navigate_to_google_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 230254005,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "input below text to search",
+            "match": {
+              "location": "GoogleStep.input_below_text_to_search(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "text"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "selenium"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11002692950,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "press enter to search",
+            "match": {
+              "location": "GoogleStep.press_enter_to_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105337920,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "can see the search result as below",
+            "match": {
+              "location": "GoogleStep.can_see_the_search_result_as_below(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "first message contains"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "selenium"
+                ],
+                "line": 17
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7784727385,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "customer click the first search result",
+            "match": {
+              "location": "GoogleStep.customer_click_the_first_search_result()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56950429,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "can see the page navigate to link",
+            "match": {
+              "location": "GoogleStep.can_see_the_page_navigate_to_link(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "page title"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "Selenium automates browsers. That\u0027s it!"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate the initial deposit amount",
+    "description": "As a Customer,\r\nI want to get the correct info after search \"selenium\" on google\r\nand click the first one can go to corresponding link.",
+    "id": "validate-the-initial-deposit-amount",
+    "keyword": "Feature",
+    "uri": "searchSelenium.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@smoke"
+      }
+    ]
+  }
+]
